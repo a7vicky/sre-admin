@@ -6,7 +6,7 @@ ref: [Documentation](https://docs.openshift.com/rosa/rosa_hcp/rosa-hcp-sts-creat
 $ git clone https://github.com/openshift-cs/terraform-vpc-example
 $ cd terraform-vpc-example
 $ terraform init
-$ terraform plan -out rosa.tfplan -var region=us-west-2 -var luster_name=a7vicky-hcp
+$ terraform plan -out rosa.tfplan -var region=us-west-2 -var cluster_name=a7vicky-hcp
 $ terraform apply rosa.tfplan
 
 $ export SUBNET_IDS=$(terraform output -raw cluster-subnets-string)
