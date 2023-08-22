@@ -20,5 +20,5 @@ $ echo $OIDC_ID
 $ rosa list oidc-config --region us-west-2
 $ rosa create operator-roles --hosted-cp --prefix a7vicky-hcp --oidc-config-id $OIDC_ID --region us-west-2
 
-$ rosa create cluster --sts --oidc-config-id $OIDC_ID  --operator-roles-prefix a7vicky-hcp --hosted-cp --subnet-ids=$SUBNET_IDS --cluster-name=s7vicky-hcp --region us-west-2
+$ rosa create cluster --sts --oidc-config-id $OIDC_ID  --operator-roles-prefix a7vicky-hcp --hosted-cp --subnet-ids=$SUBNET_IDS --cluster-name=a7vicky-hcp --region us-west-2
 ```
