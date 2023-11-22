@@ -12,7 +12,7 @@ $ terraform apply rosa.tfplan
 $ export SUBNET_IDS=$(terraform output -raw cluster-subnets-string)
 $ echo $SUBNET_IDS
 
-$ rosa create account-roles --force-policy-creation
+$ rosa create account-roles --hosted-cp --force-policy-creation
 
 $ rosa create oidc-config --mode=auto --yes --region us-west-2 
 $ export OIDC_ID=25lva45usXXXXXXXXXXXXvp796jj
